@@ -1,179 +1,131 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gửi Mẹ Yêu - 20/10 🌷</title>
-<style>
-*{box-sizing:border-box}
-body{
-  margin:0;min-height:100vh;
-  font-family:Georgia,"Times New Roman",serif;
-  color:#98516a;
-  background:linear-gradient(140deg,#fff2f6,#f6dce8,#fff8ef);
-  overflow-x:hidden
-}
-main{
-  min-height:100vh;display:flex;align-items:center;
-  justify-content:center;padding:25px 14px
-}
-.card{
-  width:100%;max-width:520px;text-align:center;
-  padding:28px 22px;background:#fffaf5ed;
-  border:1px solid white;border-radius:26px;
-  box-shadow:0 15px 55px #a64e7022;
-  position:relative;z-index:2;
-  animation:appear 1s ease
-}
-.eyebrow{font:11px Arial;letter-spacing:4px;color:#bf8497}
-h1{font-size:clamp(35px,9vw,48px);font-weight:normal;margin:17px 0 8px}
-.subtitle{font:11px Arial;letter-spacing:2px;color:#c17b91}
-.garden{
-  height:220px;display:flex;align-items:flex-end;
-  justify-content:center;margin:10px auto 0;overflow:hidden
-}
-.tulip{width:68px;height:190px;position:relative;transform-origin:bottom center;animation:sway 3s ease-in-out infinite}
-.tulip:nth-child(1){transform:rotate(-18deg) scale(.78);animation-delay:-1s}
-.tulip:nth-child(2){transform:rotate(-6deg);animation-delay:-.4s}
-.tulip:nth-child(3){transform:rotate(7deg) scale(1.04);animation-delay:-1.3s}
-.tulip:nth-child(4){transform:rotate(17deg) scale(.8);animation-delay:-.6s}
-.stem{position:absolute;left:32px;bottom:0;width:5px;height:108px;border-radius:8px;background:linear-gradient(90deg,#487b50,#9cbd8c)}
-.leaf{position:absolute;left:33px;bottom:30px;width:24px;height:55px;border-radius:100% 0 100% 0;background:linear-gradient(135deg,#b6d09e,#4b8155);transform:rotate(-25deg)}
-.leaf.right{left:11px;bottom:49px;transform:scaleX(-1) rotate(-25deg)}
-.bud{position:absolute;left:8px;bottom:94px;width:52px;height:62px;border-radius:48% 48% 42% 42%;background:linear-gradient(90deg,#d96b8b,#ffd5df 50%,#e58ba5)}
-.bud:before,.bud:after{content:"";position:absolute;bottom:3px;width:27px;height:53px;border-radius:80% 80% 35% 35%;background:linear-gradient(90deg,#f1a9bd,#ffe1e7)}
-.bud:before{left:0;transform:rotate(-12deg)}
-.bud:after{right:0;transform:rotate(12deg)}
-.divider{color:#d98aa2;letter-spacing:6px;margin:12px}
-.message{font-size:16px;line-height:1.9;margin:18px 0}
-button{font-family:inherit;cursor:pointer}
-.open{
-  border:0;border-radius:30px;padding:14px 23px;
-  color:white;background:linear-gradient(120deg,#df829d,#b64d73);
-  box-shadow:0 6px 18px #b64d7330;font-size:16px
-}
-.letter{display:none;margin-top:20px;padding:18px 14px;background:#fff1f4;border:1px solid #f4d5df;border-radius:16px;line-height:1.9;font-size:15px}
-.letter.show{display:block;animation:appear .8s ease}
-.signature{font-size:24px;font-style:italic;color:#c45b7c}
-.date{margin-top:23px;font:11px Arial;letter-spacing:1px;color:#b9798c}
-.music{
-  position:fixed;right:12px;bottom:12px;z-index:5;
-  padding:12px 15px;border:1px solid white;border-radius:30px;
-  background:#fffaf2;color:#a44c69;box-shadow:0 4px 15px #a44c6920
-}
-.petal,.heart{position:fixed;pointer-events:none;z-index:3}
-.petal{top:-30px;animation:fall linear forwards}
-.heart{bottom:-30px;animation:floatUp 4s ease-out forwards}
-@keyframes sway{0%,100%{rotate:-3deg}50%{rotate:4deg}}
-@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fall{to{transform:translate(45px,110vh) rotate(550deg);opacity:.1}}
-@keyframes floatUp{to{transform:translateY(-90vh) rotate(30deg);opacity:0}}
-@media(max-width:400px){.card{padding:25px 13px}.message{font-size:15px}.tulip{transform-origin:bottom center}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
-</style>
-</head>
-<body>
-<main>
-<section class="card">
-  <div class="eyebrow">A LITTLE GIFT FOR YOU</div>
-  <h1>Gửi Mẹ Yêu ♡</h1>
-  <div class="subtitle">BẰNG TẤT CẢ YÊU THƯƠNG</div>
-
-  <div class="garden" aria-label="Bốn bông hoa tulip hồng">
-    <div class="tulip"><div class="stem"></div><div class="leaf"></div><div class="leaf right"></div><div class="bud"></div></div>
-    <div class="tulip"><div class="stem"></div><div class="leaf"></div><div class="leaf right"></div><div class="bud"></div></div>
-    <div class="tulip"><div class="stem"></div><div class="leaf"></div><div class="leaf right"></div><div class="bud"></div></div>
-    <div class="tulip"><div class="stem"></div><div class="leaf"></div><div class="leaf right"></div><div class="bud"></div></div>
-  </div>
-
-  <div class="divider">♡ ─── ♡ ─── ♡</div>
-
-  <p class="message">
-    Mẹ à, có những yêu thương<br>
-    Py chẳng biết diễn tả thành lời.<br>
-    Nhưng Py luôn biết rằng,<br>
-    <strong>Mẹ là điều tuyệt vời nhất trong cuộc đời Py.</strong>
-  </p>
-
-  <button class="open" id="openButton" onclick="openLetter()">♡ Mẹ mở thư đi ♡</button>
-
-  <div class="letter" id="letter">
-    <p>Mẹ yêu của Py,</p>
-    <p>Cảm ơn mẹ vì đã luôn yêu thương, chở che và dành cho Py những điều tốt đẹp nhất. Dù Py có lớn đến đâu, Py vẫn luôn muốn được trở về nhà, ăn cơm mẹ nấu và nghe mẹ hỏi han mỗi ngày.</p>
-    <p>Nhân ngày 20/10, Py chúc mẹ luôn mạnh khỏe, bình an và lúc nào cũng nở nụ cười. Mong mọi vất vả của mẹ được đổi lại bằng thật nhiều niềm vui và hạnh phúc.</p>
-    <p>Nếu có một điều Py luôn cảm thấy may mắn, thì đó là được làm con của mẹ.</p>
-    <p class="signature"> 🌷</p>
-    <p>— —</p>
-  </div>
-
-  <div class="date">20 . 10 &nbsp; | &nbsp; NGÀY PHỤ NỮ VIỆT NAM</div>
-</section>
-</main>
-
-<button class="music" id="musicButton" onclick="toggleMusic()">♫ Bật nhạc piano</button>
-
 <script>
-function openLetter(){
-  document.getElementById("letter").classList.add("show");
-  const b=document.getElementById("openButton");
-  b.textContent="♡ Py yêu mẹ nhiều lắm ♡";
-  b.disabled=true;
-  for(let i=0;i<28;i++){
-    setTimeout(()=>{
-      const h=document.createElement("span");
-      h.className="heart";
-      h.textContent=["♡","♥","🌷","💕"][Math.floor(Math.random()*4)];
-      h.style.left=Math.random()*100+"vw";
-      h.style.fontSize=16+Math.random()*20+"px";
-      h.style.color="#d96f8c";
-      h.style.animationDuration=3+Math.random()*3+"s";
-      document.body.appendChild(h);
-      h.addEventListener("animationend",()=>h.remove());
-    },i*90);
+function openLetter() {
+  const letter = document.getElementById("letter");
+  const button = document.getElementById("openButton");
+
+  if (!letter || !button) return;
+
+  letter.classList.add("show");
+  button.textContent = "♡ Py yêu mẹ nhiều lắm ♡";
+  button.disabled = true;
+
+  for (let i = 0; i < 28; i++) {
+    setTimeout(() => {
+      const heart = document.createElement("span");
+      heart.className = "heart";
+      heart.textContent = ["♡", "♥", "🌷", "💕"][
+        Math.floor(Math.random() * 4)
+      ];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = 16 + Math.random() * 20 + "px";
+      heart.style.color = "#d96f8c";
+      heart.style.animationDuration = 3 + Math.random() * 3 + "s";
+      document.body.appendChild(heart);
+      heart.addEventListener("animationend", () => heart.remove());
+    }, i * 90);
   }
 }
 
-function createPetal(){
-  const p=document.createElement("span");
-  p.className="petal";
-  p.textContent=Math.random()>.5?"🌸":"✿";
-  p.style.left=Math.random()*100+"vw";
-  p.style.fontSize=10+Math.random()*12+"px";
-  p.style.opacity=.3+Math.random()*.5;
-  p.style.animationDuration=7+Math.random()*8+"s";
-  document.body.appendChild(p);
-  p.addEventListener("animationend",()=>p.remove());
-}
-for(let i=0;i<12;i++)setTimeout(createPetal,i*600);
-setInterval(createPetal,1800);
+// Cánh hoa rơi
+function createPetal() {
+  const petal = document.createElement("span");
+  petal.className = "petal";
+  petal.textContent = Math.random() > 0.5 ? "🌸" : "✿";
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.fontSize = 10 + Math.random() * 12 + "px";
+  petal.style.opacity = 0.3 + Math.random() * 0.5;
+  petal.style.animationDuration = 7 + Math.random() * 8 + "s";
 
-// Giai điệu piano nhẹ tạo trực tiếp bằng trình duyệt
-let audio=null,playing=false,timer=null,index=0;
-const melody=[
-[523.25,.5],[659.25,.5],[783.99,1],[659.25,.5],
-[587.33,.5],[659.25,1],[523.25,1],[392,1],
-[440,.5],[523.25,.5],[587.33,1],[523.25,.5],
-[440,.5],[392,1],[349.23,1]
+  document.body.appendChild(petal);
+  petal.addEventListener("animationend", () => petal.remove());
+}
+
+for (let i = 0; i < 12; i++) {
+  setTimeout(createPetal, i * 600);
+}
+setInterval(createPetal, 1800);
+
+// Nhạc piano tạo bằng Web Audio API
+let audio = null;
+let playing = false;
+let timer = null;
+let index = 0;
+
+const melody = [
+  [523.25, 0.5], [659.25, 0.5], [783.99, 1],
+  [659.25, 0.5], [587.33, 0.5], [659.25, 1],
+  [523.25, 1], [392.00, 1], [440.00, 0.5],
+  [523.25, 0.5], [587.33, 1], [523.25, 0.5],
+  [440.00, 0.5], [392.00, 1], [349.23, 1]
 ];
 
-function note(freq,duration){
-  if(!audio||!playing)return;
-  const now=audio.currentTime;
-  const osc=audio.createOscillator();
-  const gain=audio.createGain();
-  osc.type="sine";
-  osc.frequency.setValueAtTime(freq,now);
-  gain.gain.setValueAtTime(.0001,now);
-  gain.gain.exponentialRampToValueAtTime(.09,now+.03);
-  gain.gain.exponentialRampToValueAtTime(.0001,now+duration*.9);
-  osc.connect(gain);gain.connect(audio.destination);
-  osc.start(now);osc.stop(now+duration);
+function playNote(freq, duration, volume = 0.07) {
+  if (!audio || !playing) return;
+
+  const now = audio.currentTime;
+  const oscillator = audio.createOscillator();
+  const gain = audio.createGain();
+
+  oscillator.type = "sine";
+  oscillator.frequency.setValueAtTime(freq, now);
+
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(volume, now + 0.04);
+  gain.gain.exponentialRampToValueAtTime(
+    0.0001,
+    now + Math.max(0.08, duration * 0.85)
+  );
+
+  oscillator.connect(gain);
+  gain.connect(audio.destination);
+  oscillator.start(now);
+  oscillator.stop(now + duration);
 }
-function nextNote(){
-  if(!playing)return;
-  const [freq,duration]=melody[index];
-  note(freq,duration);
-  if(index%4===0)note(freq/2,duration*1.4);
-  index=(index+1)%melody.length;
-  timer=setTimeout(nextNote,duration*650);
+
+function nextNote() {
+  if (!playing) return;
+
+  const [frequency, duration] = melody[index];
+
+  playNote(frequency, duration);
+  if (index % 4 === 0) {
+    playNote(frequency / 2, duration * 1.2, 0.025);
+  }
+
+  index = (index + 1) % melody.length;
+  timer = setTimeout(nextNote, duration * 850);
 }
+
+async function toggleMusic() {
+  const button = document.getElementById("musicButton");
+
+  try {
+    if (!audio) {
+      const AudioContextClass =
+        window.AudioContext || window.webkitAudioContext;
+
+      if (!AudioContextClass) {
+        button.textContent = "Trình duyệt không hỗ trợ nhạc";
+        return;
+      }
+
+      audio = new AudioContextClass();
+    }
+
+    if (!playing) {
+      await audio.resume();
+      playing = true;
+      button.textContent = "♫ Tắt nhạc piano";
+      nextNote();
+    } else {
+      playing = false;
+      clearTimeout(timer);
+      button.textContent = "♫ Bật nhạc piano";
+    }
+  } catch (error) {
+    playing = false;
+    button.textContent = "Không phát được nhạc - thử lại";
+    console.error("Lỗi phát nhạc:", error);
+  }
+}
+</script>
